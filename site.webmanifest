@@ -1,0 +1,16 @@
+{
+  "name": "Butterfly Beauty Pro 蝶美人專業美容",
+  "short_name": "蝶美人",
+  "description": "破繭成蝶．美麗蛻變 — 元朗專業美容，問題肌精準煥膚。",
+  "lang": "zh-HK",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F4EEE2",
+  "theme_color": "#525B41",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
