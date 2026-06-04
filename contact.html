@@ -293,7 +293,7 @@
   .field-row { grid-template-columns: 1fr; }
 }
 </style>
-<script src="assets/site.js?v=2"></script>
+<script src="assets/site.js?v=3"></script>
 <script>
 (function () {
   var phone = '85264661381';
@@ -308,8 +308,7 @@
   var sendBtn = document.getElementById('bookSend');
 
   function buildMessage() {
-    var BFLY = '\uD83E\uDD8B';
-    var L = ['您好 ' + BFLY + ' 我想預約 Butterfly Beauty Pro 的護理服務。', ''];
+    var L = ['您好，我想預約 Butterfly Beauty Pro 的護理服務。', ''];
     L.push('・稱呼：' + (f.name.value.trim() || '（未填，請助理詢問）'));
     L.push('・想了解的療程：' + (f.service.value || '未確定，請助理推薦'));
     L.push('・希望日期：' + (f.date.value.trim() || '彈性，請建議可預約時段'));
