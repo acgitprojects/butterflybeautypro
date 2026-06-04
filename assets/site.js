@@ -28,18 +28,12 @@
     });
   }
 
-  // WhatsApp booking links — pre-fill a structured message for the AI agent
+  // WhatsApp booking links — a ready-to-send opener for the AI agent.
+  // This auto-sends as one tap (the customer doesn't fill anything in), so it
+  // reads as a complete, natural message and invites the agent to follow up.
   var WA_PHONE = '85264661381';
-  var WA_DEFAULT = [
-    '您好 🦋 我想預約 Butterfly Beauty Pro 的護理服務。',
-    '',
-    '・想了解的療程：',
-    '・希望日期 / 時間：',
-    '・皮膚狀況或困擾：',
-    '・聯絡稱呼：',
-    '',
-    '麻煩同事/智能助理幫我安排，謝謝！'
-  ].join('\n');
+  var WA_DEFAULT =
+    '您好 🦋 我想預約 Butterfly Beauty Pro 的護理療程，麻煩智能助理幫我推薦合適療程並安排時間，謝謝！';
   document.querySelectorAll('[data-wa]').forEach(function (el) {
     var msg = el.getAttribute('data-wa-msg') || WA_DEFAULT;
     el.setAttribute('href', 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent(msg));
